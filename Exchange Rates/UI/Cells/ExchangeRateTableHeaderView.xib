@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ExchangeRateTableHeaderView" customModule="Exchange_Rates" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="514" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFW-Zr-Vjs">
+                    <rect key="frame" x="0.0" y="0.0" width="514" height="98"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2Q-lv-KR2">
+                            <rect key="frame" x="16" y="0.0" width="482" height="98"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Валюта" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4I-Y7-E0i">
+                                    <rect key="frame" x="0.0" y="0.0" width="231.5" height="98"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Покупка" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRG-QL-UWB">
+                                    <rect key="frame" x="231.5" y="0.0" width="125" height="98"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Продажа" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COf-og-auv">
+                                    <rect key="frame" x="356.5" y="0.0" width="125.5" height="98"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="COf-og-auv" firstAttribute="width" secondItem="aRG-QL-UWB" secondAttribute="width" id="zpA-JX-mrV"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="T2Q-lv-KR2" firstAttribute="top" secondItem="rFW-Zr-Vjs" secondAttribute="top" id="6Q4-eA-O3b"/>
+                        <constraint firstItem="T2Q-lv-KR2" firstAttribute="leading" secondItem="rFW-Zr-Vjs" secondAttribute="leading" constant="16" id="HNF-HD-qvD"/>
+                        <constraint firstAttribute="trailing" secondItem="T2Q-lv-KR2" secondAttribute="trailing" constant="16" id="kon-Jg-YEW"/>
+                        <constraint firstAttribute="bottom" secondItem="T2Q-lv-KR2" secondAttribute="bottom" id="xy2-NB-M6X"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rFW-Zr-Vjs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Kxa-ld-TYs"/>
+                <constraint firstItem="rFW-Zr-Vjs" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="NN6-ij-aRB"/>
+                <constraint firstItem="rFW-Zr-Vjs" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="dzo-wS-0yZ"/>
+                <constraint firstItem="q4I-Y7-E0i" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="0.45" id="gfx-gG-w6a"/>
+                <constraint firstItem="rFW-Zr-Vjs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="jS2-fe-ORx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="203.19999999999999" y="376.01199400299851"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
